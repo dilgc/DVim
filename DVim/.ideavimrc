@@ -1,0 +1,100 @@
+" Set language menu
+set langmenu=en_US.UTF-8
+
+" Clear all existing mappings
+silent! mapclear
+
+" Map q to 'b' in normal mode
+nnoremap q b
+
+" Map q to 'b' in visual mode
+vnoremap q b
+
+" Map w to 'k'
+nnoremap w k
+vnoremap w k
+
+" Map e to 'e'
+nnoremap e e
+vnoremap e e
+
+" Map r to 'r'
+nnoremap r r
+vnoremap r r
+
+" Map a to 'h'
+nnoremap a h
+vnoremap a h
+
+" Map s to 'j'
+nnoremap s j
+vnoremap s j
+
+" Map d to 'l'
+nnoremap d l
+vnoremap d l
+
+" Map f to 'f'
+nnoremap f f
+vnoremap f f
+
+" Map x to 'x'
+nnoremap x x
+vnoremap x x
+
+" Map c to 'y'
+nnoremap c y
+vnoremap c y
+
+" Map v to 'p' (paste)
+nnoremap v p
+vnoremap v p
+
+" Map i to 'i'
+nnoremap i i
+vnoremap i i
+
+" Map esc to 'esc'
+nnoremap <Esc> <Esc>
+vnoremap <Esc> <Esc>
+
+" Map n to 'ge'
+nnoremap n ge
+vnoremap n ge
+
+" Map m to 'w'
+nnoremap m w
+vnoremap m w
+
+" Map z to 'u'
+nnoremap z u
+vnoremap z u
+
+" Map W to 'gg'
+nnoremap W gg
+vnoremap W gg
+
+" Map A to '0'
+nnoremap A 0
+vnoremap A 0
+
+" Map S to 'G'
+nnoremap S G
+vnoremap S G
+
+" Map D to '$'
+nnoremap D $
+vnoremap D $
+
+" Map backspace to 'dd'
+nnoremap <BS> dd
+vnoremap <BS> dd
+
+" Map Enter to 'v'
+nnoremap <CR> v
+
+" Map ] to add a tab to every line in visual mode
+vnoremap ] >gv
+
+" Map [ to remove a tab from every line in visual mode
+vnoremap [ <gv
