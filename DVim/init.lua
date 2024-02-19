@@ -10,14 +10,13 @@ vim.api.nvim_set_keymap('n', 'q', 'b', { noremap = true })
 -- Map q to 'b' in visual mode
 vim.api.nvim_set_keymap('v', 'q', 'b', { noremap = true })
 
-
 -- Map w to 'k'
 vim.api.nvim_set_keymap('n', 'w', 'k', { noremap = true })
 vim.api.nvim_set_keymap('v', 'w', 'k', { noremap = true })
 
--- Map e to 'w'
-vim.api.nvim_set_keymap('n', 'e', 'w', { noremap = true })
-vim.api.nvim_set_keymap('v', 'e', 'w', { noremap = true })
+-- Map e to 'e'
+vim.api.nvim_set_keymap('n', 'e', 'e', { noremap = true })
+vim.api.nvim_set_keymap('v', 'e', 'e', { noremap = true })
 
 -- Map r to 'r'
 vim.api.nvim_set_keymap('n', 'r', 'r', { noremap = true })
@@ -63,9 +62,9 @@ vim.api.nvim_set_keymap('v', '<Esc>', '<Esc>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'n', 'ge', { noremap = true })
 vim.api.nvim_set_keymap('v', 'n', 'ge', { noremap = true })
 
--- Map m to 'e'
-vim.api.nvim_set_keymap('n', 'm', 'e', { noremap = true })
-vim.api.nvim_set_keymap('v', 'm', 'e', { noremap = true })
+-- Map m to 'w'
+vim.api.nvim_set_keymap('n', 'm', 'w', { noremap = true })
+vim.api.nvim_set_keymap('v', 'm', 'w', { noremap = true })
 
 -- Map z to 'u'
 vim.api.nvim_set_keymap('n', 'z', 'u', { noremap = true })
@@ -94,15 +93,8 @@ vim.api.nvim_set_keymap('v', '<BS>', 'dd', { noremap = true })
 -- Map Enter to 'v'
 vim.api.nvim_set_keymap('n', '<CR>', 'v', { noremap = true })
 
--- Map ] to add a tab in insert mode
-vim.api.nvim_set_keymap('i', ']', '<Esc>:normal! i<Tab>', { noremap = true, silent = true })
-
--- Map [ to remove a tab in insert mode
-vim.api.nvim_set_keymap('i', '[', '<Esc>:normal! x', { noremap = true, silent = true })
-
 -- Map ] to add a tab to every line in visual mode
-vim.api.nvim_set_keymap('v', ']', ':normal! >gv', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', ']', '>gv', { noremap = true, silent = true })
 
 -- Map [ to remove a tab from every line in visual mode
-vim.api.nvim_set_keymap('v', '[', ':normal! <gv', { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap('v', '[', '<gv', { noremap = true, silent = true })
